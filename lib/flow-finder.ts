@@ -1,6 +1,6 @@
 import fs from 'fs';
 import jsonfile from 'jsonfile';
-import { Environment, FlowFile } from 'last-hit-replayer';
+import { Environment, FlowFile } from 'last-hit-replayer/dist';
 import path from 'path';
 import { MatrixData } from './types';
 import { getMatrixDataFile, getMatrixFolder } from './utils';

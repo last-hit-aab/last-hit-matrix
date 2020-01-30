@@ -1,6 +1,6 @@
 {
 	"name": "last-hit-matrix",
-	"version": "0.9.3",
+	"version": "0.9.4-dev.1",
 	"description": "matrix replayer for last-hit ci",
 	"main": "dist/index.js",
 	"repository": "https://github.com/last-hit-aab/last-hit-matrix.git",
@@ -27,7 +27,8 @@
 	},
 	"devDependencies": {
 		"gulp": "^4.0.2",
-		"gulp-sourcemaps": "^2.6.5",
-		"gulp-typescript": "^6.0.0-alpha.1"
+		"gulp-typescript": "^6.0.0-alpha.1",
+		"gulp-uglify": "^3.0.2",
+		"ts-loader": "^6.2.1"
 	}
 }

@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const ts = require('gulp-typescript');
 const fs = require('fs');
-const sourcemaps = require('gulp-sourcemaps');
+const uglify = require('gulp-uglify');
 
 const clean = cb => {
 	if (fs.existsSync('dist') && fs.statSync('dist').isDirectory()) {
@@ -13,15 +13,10 @@ const compileTs = cb => {
 	const tsProject = ts.createProject('tsconfig.json');
 	tsProject
 		.src()
-		.pipe(sourcemaps.init())
 		.pipe(tsProject())
-		.js.pipe(sourcemaps.write('.'))
+		.pipe(uglify())
 		.pipe(gulp.dest('dist'));
 	cb();
 };
-const copyReportTemplate = cb => {
-	gulp.src('**/report-default.hbs').pipe(gulp.dest('dist'));
-	cb();
-};
 
-exports.default = gulp.series(clean, compileTs, copyReportTemplate);
+exports.default = gulp.series(clean, compileTs);

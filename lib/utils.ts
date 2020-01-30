@@ -1,4 +1,4 @@
-import { Environment } from 'last-hit-replayer';
+import { Environment } from 'last-hit-replayer/dist';
 import path from 'path';
 
 export const getMatrixFolder = (env: Environment): string => {

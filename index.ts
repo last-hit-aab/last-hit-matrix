@@ -1,6 +1,6 @@
 import 'colors';
 import console from 'console';
-import { doOnMultipleProcesses, doOnSingleProcess } from 'last-hit-replayer';
+import { doOnMultipleProcesses, doOnSingleProcess } from 'last-hit-replayer/dist/index';
 import { loadConfig } from './lib/env-loader';
 import { findFlows } from './lib/flow-finder';
 
