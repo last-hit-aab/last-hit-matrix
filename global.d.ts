@@ -33,6 +33,7 @@ declare module 'last-hit-replayer/dist' {
 		isOnParallel(): boolean;
 		isIncluded(storyName: string, flowName: string): boolean;
 		isExcluded(storyName: string, flowName: string): boolean;
+		isOnChildProcess(): boolean;
 	}
 	class FlowFile {
 		story: string;

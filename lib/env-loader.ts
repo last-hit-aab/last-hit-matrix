@@ -1,15 +1,22 @@
 import fs from 'fs';
 import jsonfile from 'jsonfile';
-import { Environment, loadConfig } from 'last-hit-replayer/dist';
+import { Environment, loadConfig, FlowFile } from 'last-hit-replayer/dist';
 import { Flow } from 'last-hit-types';
 import path from 'path';
-import { getMatrixDataFile } from './utils';
+import { getMatrixDataFile, isMatrixed } from './utils';
 import { MatrixData } from './types';
+import { IncludingFilter, IncludingFilters } from 'last-hit-replayer/lib/types';
 
 const matrixRegexp = /^matrix:(.+)\?(.+)$/;
-class MatrixEnvironment extends Environment {
+export class MatrixEnvironment extends Environment {
+	private includes: IncludingFilters;
 	constructor(env: Environment) {
 		super(env.getOriginalOptions());
+		this.includes = env.getOriginalOptions().includes;
+	}
+	getFlowFileInChildProcess(): FlowFile {
+		const { story, flow } = this.includes[0];
+		return { story, flow: flow! };
 	}
 	isFlowExists(storyName: string, flowName: string): boolean {
 		const dependsStoryFolder = path.join(this.getWorkspace(), storyName);
@@ -47,8 +54,8 @@ class MatrixEnvironment extends Environment {
 				Object.keys(matrixData.depends).forEach(depend => {
 					const dependKey = matrixData.depends[depend];
 					const ss = depend.split('@');
-					const dependStoryName = (ss[0] || '').trim();
-					const dependFlowName = (ss[1] || '').trim();
+					const dependFlowName = (ss[0] || '').trim();
+					const dependStoryName = (ss[1] || '').trim();
 					if (!dependStoryName || !dependFlowName) {
 						throw new Error(
 							`Incorrect dependency[${depend}] on matrix definition of [${realFlowName}@${storyName}]`
@@ -82,7 +89,7 @@ class MatrixEnvironment extends Environment {
 		}
 	}
 }
-const load = (): Promise<Environment> => {
+const load = (): Promise<MatrixEnvironment> => {
 	return new Promise(async (resolve, reject) => {
 		try {
 			const env = await loadConfig();

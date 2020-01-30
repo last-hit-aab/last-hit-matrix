@@ -13,3 +13,7 @@ export const getMatrixDataFile = (
 ): string => {
 	return path.join(getMatrixFolder(env), story, `matrix:${flow}?${key}.json`);
 };
+
+export const isMatrixed = (flowName: string): boolean => {
+	return !!flowName && flowName.startsWith('matrix:');
+};
