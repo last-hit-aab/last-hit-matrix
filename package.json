@@ -1,12 +1,11 @@
 {
 	"name": "last-hit-matrix",
-	"version": "0.9.6",
+	"version": "0.0.2",
 	"description": "matrix replayer for last-hit ci",
 	"main": "dist/index.js",
 	"repository": "https://github.com/last-hit-aab/last-hit-matrix.git",
 	"author": "last-hit-team",
 	"license": "Commercial",
-	"private": true,
 	"scripts": {
 		"start": "gulp && node bin/entry.js",
 		"test": "last-hit-matrix",
