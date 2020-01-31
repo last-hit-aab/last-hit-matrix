@@ -1869,20 +1869,20 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.npmjs.org/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
-last-hit-extensions@0.9.6:
-  version "0.9.6"
-  resolved "https://registry.npmjs.org/last-hit-extensions/-/last-hit-extensions-0.9.6.tgz#cea73b0b5c22d4ae24202904e989d67fa156a908"
-  integrity sha512-7ib1eoea+t7ZB+45aX9QniVeh1PYjkGYZWrDCu2xEddZzBR4CGDT9638X+TounMAp3XyZWSrNixcyULkCY4+fg==
+last-hit-extensions@^0.9.7:
+  version "0.9.7"
+  resolved "https://registry.npmjs.org/last-hit-extensions/-/last-hit-extensions-0.9.7.tgz#2c2a352e684ca87bb5e8ca2dcf7db734705e4f7a"
+  integrity sha512-raXgXOLtYTLUFEUamcmmEQWIITO1HtAM8JozPvrQiQ1GFF/XIw6Br2ee3kkrI32WnxdS8AjTZQHiM6lL0ffh0w==
   dependencies:
     "@types/jsonfile" "^5.0.0"
     jsonfile "^5.0.0"
-    last-hit-types "0.9.6"
+    last-hit-types "^0.9.7"
     typescript "^3.7.2"
 
-last-hit-replayer@^0.9.6:
-  version "0.9.6"
-  resolved "https://registry.npmjs.org/last-hit-replayer/-/last-hit-replayer-0.9.6.tgz#368698ef1ecad23390eddde51df4f3de7255fbf5"
-  integrity sha512-PgoIiWj/bIasNMSYQKCYWRKOnAR9LbBdPpz6vSFL3+5C9RIjFqLhUHi56Tlk8Mibn6K9xGJL8M8KUd4gGC90eg==
+last-hit-replayer@^0.9.8:
+  version "0.9.8"
+  resolved "https://registry.npmjs.org/last-hit-replayer/-/last-hit-replayer-0.9.8.tgz#77bb9e6192792820e9d2f1476970fa753061bcd6"
+  integrity sha512-elu+CFvjEawF4z+lNB/6AsvE2U0Dkn0LFhXscoQs/1pvxbgv0/P1gvXpyjkYmi7SH6+50rpr9e6Ol0tEQ+rleg==
   dependencies:
     "@types/atob" "^2.1.2"
     "@types/clone" "^0.1.30"
@@ -1900,7 +1900,7 @@ last-hit-replayer@^0.9.6:
     handlebars "^4.5.3"
     image-ssim "^0.2.0"
     jsonfile "^5.0.0"
-    last-hit-extensions "0.9.6"
+    last-hit-extensions "^0.9.7"
     mkdirp "^0.5.1"
     node-resemble-js "^0.2.0"
     nyc "^14.1.1"
@@ -1911,10 +1911,10 @@ last-hit-replayer@^0.9.6:
     uuid "^3.3.3"
     yargs "^14.0.0"
 
-last-hit-types@0.9.6:
-  version "0.9.6"
-  resolved "https://registry.npmjs.org/last-hit-types/-/last-hit-types-0.9.6.tgz#cea2374b7bb2929d2d15b8529f0b903acbf38727"
-  integrity sha512-X55t4AwvPn+nyrSMxBwIUvy6giG4/w2khC1/cErkXT0vZUvY928EgzCWjVTkgXQe1NRc2vDZzckykXzsgb1cbw==
+last-hit-types@^0.9.7:
+  version "0.9.7"
+  resolved "https://registry.npmjs.org/last-hit-types/-/last-hit-types-0.9.7.tgz#daa7d191e4c86d3e397fc3f3854b009ffd04b4de"
+  integrity sha512-x2do+JbODD9bojyXWgZT4d8k9MRXeZb2hI8u0gfKwFn+MhPcnllsmAOIapmBVcT8mDzwPi3qMpxmoaLrIAY3LA==
 
 last-run@^1.1.0:
   version "1.1.1"

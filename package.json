@@ -20,7 +20,7 @@
 		"@types/yargs": "^15.0.2",
 		"colors": "^1.4.0",
 		"jsonfile": "^5.0.0",
-		"last-hit-replayer": "^0.9.6",
+		"last-hit-replayer": "^0.9.8",
 		"typescript": "^3.7.5",
 		"yargs": "^15.1.0"
 	},
