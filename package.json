@@ -1,6 +1,6 @@
 {
 	"name": "last-hit-matrix",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "matrix replayer for last-hit ci",
 	"main": "dist/index.js",
 	"repository": "https://github.com/last-hit-aab/last-hit-matrix.git",
@@ -20,7 +20,7 @@
 		"@types/yargs": "^15.0.2",
 		"colors": "^1.4.0",
 		"jsonfile": "^5.0.0",
-		"last-hit-replayer": "^0.9.10",
+		"last-hit-replayer": "^0.9.12",
 		"typescript": "^3.7.5",
 		"yargs": "^15.1.0"
 	},
