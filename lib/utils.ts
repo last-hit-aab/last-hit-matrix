@@ -14,6 +14,12 @@ export const getMatrixDataFile = (
 	return path.join(getMatrixFolder(env), story, `matrix:${flow}?${key}.json`);
 };
 
-export const isMatrixed = (flowName: string): boolean => {
-	return !!flowName && flowName.startsWith('matrix:');
+const matrixRegexp = /^matrix:(.+)\?(.+)$/;
+export const getOriginalFlow = (flowName: string): { flow: string, matrixKey?: string, matrixed: boolean } => {
+	const matches = flowName.match(matrixRegexp);
+	if (matches == null) {
+		return { flow: flowName, matrixed: false };
+	} else {
+		return { flow: matches[1], matrixKey: matches[2], matrixed: true };
+	}
 };
