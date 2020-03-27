@@ -1838,20 +1838,20 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.npmjs.org/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
-last-hit-extensions@^0.9.9:
-  version "0.9.9"
-  resolved "https://registry.npmjs.org/last-hit-extensions/-/last-hit-extensions-0.9.9.tgz#c402adc5558a57ae3c5cc0ed6052026d550e9683"
-  integrity sha512-8RO/W5R8PdrABFS0s7D+ApdAKfutG7buM2500QeOcUKbiAWfSBJXlQ3r5RpFlz0F8SMNwdUEpFDQ4arCOvupKA==
+last-hit-extensions@^0.10.1:
+  version "0.10.1"
+  resolved "https://registry.npmjs.org/last-hit-extensions/-/last-hit-extensions-0.10.1.tgz#07864e70c6b6bce84e711e0b0610fcff46cd1ee3"
+  integrity sha512-YCOr1XthImneywe/CH/p/HVkNsQfm4QRE+EJK4XBuRv9IJcoYIpRw+5lg73gM8fXS3uD4TWM/6n5yb+NgudvVA==
   dependencies:
     "@types/jsonfile" "^5.0.0"
     jsonfile "^5.0.0"
     last-hit-types "^0.9.9"
     typescript "^3.7.2"
 
-last-hit-replayer@^0.10.2:
-  version "0.10.2"
-  resolved "https://registry.npmjs.org/last-hit-replayer/-/last-hit-replayer-0.10.2.tgz#007aa59bf2a9d73e31c390e4ec9e2d2da3e89a94"
-  integrity sha512-SnNxE7HmnrtyZKWw6dVoF5bQ7KvijU+QI1/o4qnvpsS2lDAst6RJ3byULbFOaguZBE9qUce2Q5497b1/Y21d1g==
+last-hit-replayer@^0.10.5:
+  version "0.10.5"
+  resolved "https://registry.npmjs.org/last-hit-replayer/-/last-hit-replayer-0.10.5.tgz#4abbc65388ab082814abba9312306023d413f91b"
+  integrity sha512-e1T0wsdig06bAgS0HdWwI6h83l/G1L8coS+uMrn2PTTrVwDFbVaDf1oHYB31PeYmtgzaRN3FXd+v0c+qnkDkow==
   dependencies:
     "@types/atob" "^2.1.2"
     "@types/clone" "^0.1.30"
@@ -1870,7 +1870,7 @@ last-hit-replayer@^0.10.2:
     handlebars "^4.5.3"
     image-ssim "^0.2.0"
     jsonfile "^5.0.0"
-    last-hit-extensions "^0.9.9"
+    last-hit-extensions "^0.10.1"
     mkdirp "^0.5.1"
     node-resemble-js "^0.2.0"
     nyc "^14.1.1"
