@@ -1848,10 +1848,10 @@ last-hit-extensions@^0.10.1:
     last-hit-types "^0.9.9"
     typescript "^3.7.2"
 
-last-hit-replayer@^0.10.5:
-  version "0.10.5"
-  resolved "https://registry.npmjs.org/last-hit-replayer/-/last-hit-replayer-0.10.5.tgz#4abbc65388ab082814abba9312306023d413f91b"
-  integrity sha512-e1T0wsdig06bAgS0HdWwI6h83l/G1L8coS+uMrn2PTTrVwDFbVaDf1oHYB31PeYmtgzaRN3FXd+v0c+qnkDkow==
+last-hit-replayer@^0.10.6:
+  version "0.10.6"
+  resolved "https://registry.npmjs.org/last-hit-replayer/-/last-hit-replayer-0.10.6.tgz#dc8fe58b8840aa5fba835f0c15069474a224fea9"
+  integrity sha512-v4JLwAfmHlu/+IJkSzVA82qng3sYAElfqe5bNUdp0RAFVKXxBRhYhxIG1FXuO25uzamM8Qj/vweXpMCVzJyyOg==
   dependencies:
     "@types/atob" "^2.1.2"
     "@types/clone" "^0.1.30"
