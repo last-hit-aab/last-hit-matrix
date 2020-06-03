@@ -22,7 +22,7 @@
 		"jsonfile": "^5.0.0",
 		"last-hit-replayer": "^0.10.8",
 		"typescript": "^3.7.5",
-		"yargs": "^15.1.0"
+		"yargs": "^15.3.1"
 	},
 	"devDependencies": {
 		"gulp": "^4.0.2",
