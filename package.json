@@ -17,7 +17,7 @@
 	"dependencies": {
 		"@types/colors": "^1.2.1",
 		"@types/jsonfile": "^5.0.0",
-		"@types/yargs": "^15.0.2",
+		"@types/yargs": "^15.0.4",
 		"colors": "^1.4.0",
 		"jsonfile": "^5.0.0",
 		"last-hit-replayer": "^0.10.8",
