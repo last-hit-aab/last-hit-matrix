@@ -21,7 +21,7 @@
 		"colors": "^1.4.0",
 		"jsonfile": "^5.0.0",
 		"last-hit-replayer": "^0.10.9",
-		"typescript": "^3.7.5",
+		"typescript": "^3.9.10",
 		"yargs": "^15.1.0"
 	},
 	"devDependencies": {
