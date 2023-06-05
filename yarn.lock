@@ -125,6 +125,13 @@
   dependencies:
     "@types/node" "*"
 
+"@types/jsonfile@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@types/jsonfile/-/jsonfile-5.0.2.tgz#df03c2a5c66fd3471b71d6b6d53fa7b3cc1bf32d"
+  integrity sha512-T8t3Y8WjA65VRN1gQnAc7ynEwOUHogseQXbEQIV+EopaiwaWTeF/kliF7j+69bz55gnAEIjayechK91FutjW2g==
+  dependencies:
+    "@types/node" "*"
+
 "@types/mime-types@^2.1.0":
   version "2.1.0"
   resolved "https://registry.npmjs.org/@types/mime-types/-/mime-types-2.1.0.tgz#9ca52cda363f699c69466c2a6ccdaad913ea7a73"
